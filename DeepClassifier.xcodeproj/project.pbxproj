@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		366D27FB1F328BFF000C8BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D27FA1F328BFF000C8BBF /* AppDelegate.swift */; };
+		366D27FD1F328BFF000C8BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366D27FC1F328BFF000C8BBF /* ViewController.swift */; };
+		366D28001F328BFF000C8BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366D27FE1F328BFF000C8BBF /* Main.storyboard */; };
+		366D28031F328BFF000C8BBF /* DeepClassifier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 366D28011F328BFF000C8BBF /* DeepClassifier.xcdatamodeld */; };
+		366D28051F328BFF000C8BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366D28041F328BFF000C8BBF /* Assets.xcassets */; };
+		366D28081F328BFF000C8BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366D28061F328BFF000C8BBF /* LaunchScreen.storyboard */; };
+		366D6BB51FA123D7006BBBFE /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 366D6BB41FA123D7006BBBFE /* MobileNet.mlmodel */; };
+		366D6BB71FA12B80006BBBFE /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 366D6BB61FA12B80006BBBFE /* SqueezeNet.mlmodel */; };
+		366D6BBA1FA13325006BBBFE /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 366D6BB81FA13323006BBBFE /* Inceptionv3.mlmodel */; };
+		366D6BBB1FA13325006BBBFE /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 366D6BB91FA13325006BBBFE /* Resnet50.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		366D27F71F328BFF000C8BBF /* DeepClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		366D27FA1F328BFF000C8BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		366D27FC1F328BFF000C8BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		366D27FF1F328BFF000C8BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		366D28021F328BFF000C8BBF /* DeepClassifier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepClassifier.xcdatamodel; sourceTree = "<group>"; };
+		366D28041F328BFF000C8BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		366D28071F328BFF000C8BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		366D28091F328BFF000C8BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366D6BB41FA123D7006BBBFE /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		366D6BB61FA12B80006BBBFE /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
+		366D6BB81FA13323006BBBFE /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		366D6BB91FA13325006BBBFE /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		36CDE9B01F33BE7D000D1C3D /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		366D27F41F328BFF000C8BBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		366D27EE1F328BFF000C8BBF = {
+			isa = PBXGroup;
+			children = (
+				366D27F91F328BFF000C8BBF /* DeepClassifier */,
+				366D27F81F328BFF000C8BBF /* Products */,
+				36CDE9AF1F33BE7C000D1C3D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		366D27F81F328BFF000C8BBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				366D27F71F328BFF000C8BBF /* DeepClassifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		366D27F91F328BFF000C8BBF /* DeepClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				366D27FA1F328BFF000C8BBF /* AppDelegate.swift */,
+				366D6BB41FA123D7006BBBFE /* MobileNet.mlmodel */,
+				366D6BB61FA12B80006BBBFE /* SqueezeNet.mlmodel */,
+				366D6BB81FA13323006BBBFE /* Inceptionv3.mlmodel */,
+				366D6BB91FA13325006BBBFE /* Resnet50.mlmodel */,
+				366D27FC1F328BFF000C8BBF /* ViewController.swift */,
+				366D27FE1F328BFF000C8BBF /* Main.storyboard */,
+				366D28041F328BFF000C8BBF /* Assets.xcassets */,
+				366D28061F328BFF000C8BBF /* LaunchScreen.storyboard */,
+				366D28091F328BFF000C8BBF /* Info.plist */,
+				366D28011F328BFF000C8BBF /* DeepClassifier.xcdatamodeld */,
+			);
+			path = DeepClassifier;
+			sourceTree = "<group>";
+		};
+		36CDE9AF1F33BE7C000D1C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36CDE9B01F33BE7D000D1C3D /* CoreML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		366D27F61F328BFF000C8BBF /* DeepClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 366D280C1F328BFF000C8BBF /* Build configuration list for PBXNativeTarget "DeepClassifier" */;
+			buildPhases = (
+				366D27F31F328BFF000C8BBF /* Sources */,
+				366D27F41F328BFF000C8BBF /* Frameworks */,
+				366D27F51F328BFF000C8BBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepClassifier;
+			productName = DeepClassifier;
+			productReference = 366D27F71F328BFF000C8BBF /* DeepClassifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		366D27EF1F328BFF000C8BBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Marc Haubenstock";
+				TargetAttributes = {
+					366D27F61F328BFF000C8BBF = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 366D27F21F328BFF000C8BBF /* Build configuration list for PBXProject "DeepClassifier" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 366D27EE1F328BFF000C8BBF;
+			productRefGroup = 366D27F81F328BFF000C8BBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				366D27F61F328BFF000C8BBF /* DeepClassifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		366D27F51F328BFF000C8BBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366D28081F328BFF000C8BBF /* LaunchScreen.storyboard in Resources */,
+				366D28051F328BFF000C8BBF /* Assets.xcassets in Resources */,
+				366D28001F328BFF000C8BBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		366D27F31F328BFF000C8BBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				366D6BBB1FA13325006BBBFE /* Resnet50.mlmodel in Sources */,
+				366D6BB51FA123D7006BBBFE /* MobileNet.mlmodel in Sources */,
+				366D6BBA1FA13325006BBBFE /* Inceptionv3.mlmodel in Sources */,
+				366D27FD1F328BFF000C8BBF /* ViewController.swift in Sources */,
+				366D6BB71FA12B80006BBBFE /* SqueezeNet.mlmodel in Sources */,
+				366D27FB1F328BFF000C8BBF /* AppDelegate.swift in Sources */,
+				366D28031F328BFF000C8BBF /* DeepClassifier.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		366D27FE1F328BFF000C8BBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366D27FF1F328BFF000C8BBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		366D28061F328BFF000C8BBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				366D28071F328BFF000C8BBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		366D280A1F328BFF000C8BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		366D280B1F328BFF000C8BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		366D280D1F328BFF000C8BBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P9C6EA8RAC;
+				INFOPLIST_FILE = DeepClassifier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MH.DeepClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		366D280E1F328BFF000C8BBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P9C6EA8RAC;
+				INFOPLIST_FILE = DeepClassifier/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MH.DeepClassifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		366D27F21F328BFF000C8BBF /* Build configuration list for PBXProject "DeepClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366D280A1F328BFF000C8BBF /* Debug */,
+				366D280B1F328BFF000C8BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		366D280C1F328BFF000C8BBF /* Build configuration list for PBXNativeTarget "DeepClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				366D280D1F328BFF000C8BBF /* Debug */,
+				366D280E1F328BFF000C8BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		366D28011F328BFF000C8BBF /* DeepClassifier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				366D28021F328BFF000C8BBF /* DeepClassifier.xcdatamodel */,
+			);
+			currentVersion = 366D28021F328BFF000C8BBF /* DeepClassifier.xcdatamodel */;
+			path = DeepClassifier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 366D27EF1F328BFF000C8BBF /* Project object */;
+}
